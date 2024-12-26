@@ -304,9 +304,11 @@ img {
 
 .skills-img img {
   border-radius: 0.5rem;
-  width:500px;
-  height:500px;
+  width:100%;
+  height:100%;
   border: 5px solid  rgb(255, 215, 0);
+  object-fit: contain;
+  object-position: center;
 }
 
 /*PORTFOLIO*/
@@ -685,7 +687,20 @@ img {
     .portfolio-nav a{
     font-size:17px;
   }
+
+  .skills-img img {
+  border-radius: 0.5rem;
+  width:100%;
+  height:100%;
+  border: 5px solid  rgb(255, 215, 0);
+  object-fit: contain;
+  object-position: center;
 }
+.skills-img{
+  margin-bottom:10px;
+}
+}
+
 
 @media screen and (min-width: 768px) {
   body {
