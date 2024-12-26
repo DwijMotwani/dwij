@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+</head>
+
+<body>
+  <header class="l-header">
+    <nav class="nav bd-grid">
+      <div>
+        <a href="#" class="nav-logo">Dwij Motwani</a>
+      </div>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle">
+        <i class='bx bx-menu'></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="l-main">
+    <section class="home" id="home">
+      <div class="home-container bd-grid">
+        <h1 class="home-title"><span>Hello, I'M</h1>
+        <h2 class="home-title"><span>Dwij Motwani</h2>
+        <h3 class="home-title" id="typing-effect"></h3>
+
+        <div class="home-scroll">
+          <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt'></i>SCROLL DOWN</a>
+        </div>
+
+        <img src="images/dwij2.png" alt="Dwij Motwani" class="home-img">
+      </div>
+    </section>
+
+
+    <section class="about section" id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about-container bd-grid">
+        <!-- <div class="about-img">
+                    <img src="images/dwij.png" alt="Dwij Motwani image">
+                </div> -->
+        <div>
+          <h2 class="about-subtitle">I'm Dwij Motwani</h2>
+          <span class="about-profession">UI/UX Designer, Product Designer & Web Designer</span>
+          <p class="about-text">
+            As a passionate UI/UX Designer, Web Designer, and Product Designer(Learning), I bring a creative and
+            adaptable approach to every project. With 1 year of experience in UI/UX design and web design & development,
+            I’m skilled in tools like Figma, Adobe Illustrator, and Photoshop, and technologies such as HTML, CSS,
+            JavaScript, PHP, and CodeIgniter. While I’m learning Product Design independently, I’ve designed an existing
+            product to apply my knowledge. I am committed to continuous learning and believe in effective communication
+            for delivering high-quality work.
+          </p>
+
+
+          <div class="about-social">
+            <a href="#" class="about-social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="#" class="about-social-icon"><i class='bx bxl-github'></i></a>
+            <a href="#" class="about-social-icon"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-container bd-grid">
+        <div class="skills-box">
+
+          <h3 class="skills-subtitle">Design</h3>
+          <span class="skills-name">UI/UX Design</span>
+          <span class="skills-name">Product Design</span>
+          <span class="skills-name">Figma</span>
+          <span class="skills-name">Adobe Illustrator</span>
+          <span class="skills-name">Adobe Photoshop</span>
+          <span class="skills-name">Sketching</span>
+          <span class="skills-name">Image Editing</span>
+          <span class="skills-name">Thumbnail Editing</span>
+          <span class="skills-name">Creative Thinking</span>
+
+          <h3 class="skills-subtitle">Development</h3>
+          <span class="skills-name">HTML</span>
+          <span class="skills-name">CSS</span>
+          <span class="skills-name">JavaScript</span>
+          <span class="skills-name">PHP</span>
+          <span class="skills-name">CodeIgniter Framework</span>
+          <span class="skills-name">Visual Studio Code</span>
+          <span class="skills-name">Bootstrap</span>
+          <span class="skills-name">Xampp</span>
+
+          <h3 class="skills-subtitle">Content Creation</h3>
+          <span class="skills-name">Live Streaming</span>
+          <span class="skills-name">YouTube</span>
+          <span class="skills-name">Video Editing</span>
+          <span class="skills-name">Gaming</span>
+          <span class="skills-name">Problem Solving</span>
+
+        </div>
+
+
+        <div class="skills-img">
+          <img src="images/bg.jpg" alt="skills image">
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Portfolio Sections -->
+    <section class="portfolio-section active portfolio">
+          <!-- Navigation Menu -->
+    <section id="portfolio">
+      <h2 class="section-title">Portfolio</h2>
+      <nav class="portfolio-nav">
+        <ul>
+          <li><a href="#all" class="active" onclick="filterPortfolio('all')">All</a></li>
+          <li><a href="#uiux" onclick="filterPortfolio('uiux')">UI/UX Design</a></li>
+          <li><a href="#web" onclick="filterPortfolio('web')">Web Design</a></li>
+          <li><a href="#product" onclick="filterPortfolio('product')">Product Design</a></li>
+          <li><a href="#sketching" onclick="filterPortfolio('sketching')">Sketching</a></li>
+          <li><a href="#gaming" onclick="filterPortfolio('gaming')">Gaming</a></li>
+        </ul>
+      </nav>
+    </section>
+      <!-- UI/UX Design Section -->
+      <div class="portfolio-item uiux">
+        <h3>UI/UX Design Project</h3>
+        <p>My UI/UX project. I have completed this Project for ottaBOX Tecchnologies as a Freelancer. Tools: Figma, Photoshop.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/uiux1.png" alt="Work Image" onclick="openModal('images/uiux1.png')">
+            <div class="text-button-container">
+              <p>Frisky Foam App User Screens</p>
+              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-5735&starting-point-node-id=2254%3A5735&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1" class="image-button" target="_blank">View Figma</a>
+            </div>
+          </div>
+
+          <div class="image-box">
+            <img src="images/uiux2.png" alt="Output Image" onclick="openModal('images/uiux2.png')">
+            <div class="text-button-container">
+              <p>Frisky Foam App Cleaner Screens</p>
+              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-8546&starting-point-node-id=2254%3A8546&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1" class="image-button" target="_blank">View Figma</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Design Section -->
+      <div class="portfolio-item web">
+        <h3>Web Design Project</h3>
+        <p>My web design projects. I have completed this Projects for ottaBOX Tecchnologies as an Intern. Tools: HTML, CSS, JavaScript, Codeigniter, Visual Studio, Bootstrap, Xampp.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/Web1.png" alt="Work Image" onclick="openModal('images/Web1.png')">
+            <div class="text-button-container">
+              <p>Akshar Agro Website</p>
+              <a href="https://aksharagroagency.net/" class="image-button" target="_blank">View Website</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/Web2.png" alt="Output Image" onclick="openModal('images/Web2.png')">
+            <div class="text-button-container">
+              <p>Tata Nexon (Webpage Discontinued)</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Web2.png')">View</a>
+            </div>
+          </div>
+        </div><br>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/Web3.png" alt="Work Image" onclick="openModal('images/Web3.png')">
+            <div class="text-button-container">
+              <p>Tata Safari (Webpage Discontinued)</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Web3.png')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/Web4.png" alt="Output Image" onclick="openModal('images/Web4.png')">
+            <div class="text-button-container">
+              <p>Tata Harrier (Webpage Discontinued)</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Web4.png')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/web5.png" alt="Output Image" onclick="openModal('images/web5-2.png')">
+            <div class="text-button-container">
+              <p>Fashion Website (College Project)</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/web5-2.png')">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Design Section -->
+      <div class="portfolio-item product">
+        <h3>Product Design Project (Self Learning)</h3>
+        <p>Product design project done by Myself for Learning Product Design. Tools: Photoshop.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/Kurkure.png" alt="Work Image" onclick="openModal('images/Kurkure.png')">
+            <div class="text-button-container">
+              <p>Kurkure Design Image</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Kurkure.png')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/Bag_of_Kurkure.jpg" alt="Output Image" onclick="openModal('images/Bag_of_Kurkure.jpg')">
+            <div class="text-button-container">
+              <p>Kurkure Package Output Image</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Bag_of_Kurkure.jpg')">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-item sketching">
+        <h3>My Sketching Art</h3>
+        <p>I love doing Drawing and Sketching.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/sketch1.jpg" alt="Sketch Image" onclick="openModal('images/sketch1.jpg')">
+            <div class="text-button-container">
+              <p>RadheKrishna</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/sketch1.jpg')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/sketch2.jpg" alt="Sketch Image" onclick="openModal('images/sketch2.jpg')">
+            <div class="text-button-container">
+              <p>ShivParvati</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Sketch2.jpg')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/sketch3.jpg" alt="Sketch Image" onclick="openModal('images/sketch3.jpg')">
+            <div class="text-button-container">
+              <p>Mercedese E-Class</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Sketch3.jpg')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/sketch4.jpg" alt="Sketch Image" onclick="openModal('images/sketch4.jpg')">
+            <div class="text-button-container">
+              <p>Car</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Sketch4.jpg')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/sketch5.jpg" alt="Sketch Image" onclick="openModal('images/sketch5.jpg')">
+            <div class="text-button-container">
+              <p>SaiRam</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('images/Sketch5.jpg')">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="portfolio-item gaming">
+        <h3>Gaming Project</h3>
+        <p>Brief description of your gaming project or design related to gaming (e.g., thumbnails).</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="images/game-work.jpg" alt="Gaming Image" onclick="openModal('images/game-work.jpg')">
+            <div class="text-button-container">
+              <p>Output Image</p>
+              <a href="https://example.com/work-image" class="image-button" target="_blank">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="images/game-output.jpg" alt="Gaming Output Image" onclick="openModal('images/game-output.jpg')">
+            <div class="text-button-container">
+              <p>Output Image</p>
+              <a href="https://example.com/work-image" class="image-button" target="_blank">View</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <img id="modal-image" src="" alt="Modal Content">
+    </div>
+
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact</h2>
+
+      <div class="contact-container bd-grid">
+        <div class="contact-info">
+          <h3 class="contact-subtitle">EMAIL</h3>
+          <span class="contact-text">dwijmotwani@gmail.com</span>
+
+          <h3 class="contact-subtitle">PHONE</h3>
+          <span class="contact-text">+91 8200009219</span>
+
+          <h3 class="contact-subtitle">ADDRESS</h3>
+          <span class="contact-text">Navsari, Gujarat, india</span>
+        </div>
+<!-- 
+        <form action="" class="contact-form">
+          <div class="contact-inputs">
+            <input type="text" placeholder="Name" class="contact-input">
+            <input type="email" placeholder="Email" class="contact-input">
+          </div>
+
+          <textarea name="" id="" cols="0" rows="10" class="contact-input"></textarea>
+
+          <input type="submit" value="Send" class="contact-button">
+        </form> -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer section">
+    <div class="footer-container bd-grid">
+      <div class="footer-data">
+        <h2 class="footer-title">Dwij Motwani</h2>
+        <p class="footer-text">I'm Dwij Motwani and this is my personal website</p>
+      </div>
+
+      <div class="footer-data">
+        <h2 class="footer-title">Dwij Motwani</h2>
+        <ul>
+          <li><a href="#home" class="footer-link">Home</a></li>
+          <li><a href="#about" class="footer-link">About</a></li>
+          <li><a href="#skills" class="footer-link">Skills</a></li>
+          <li><a href="#portfolio" class="footer-link">Portfolio</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-data">
+        <h2 class="footer-title">FOLLOW</h2>
+
+        <a href="#" class="footer-social"><i class='bx bxl-instagram'></i></a>
+        <a href="#" class="footer-social"><i class='bx bxl-facebook'></i></a>
+        <a href="#" class="footer-social"><i class='bx bxl-twitter'></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scrollreveal.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
