@@ -1,6 +1,6 @@
 # My Portfolio
 
-Welcome to my portfolio! I am Dwij Rakesh Motwani, a UI/UX designer, web developer, and gamer. This portfolio showcases my work and skills in various domains, including product design, live streaming, and technical expertise.
+Welcome to my portfolio! I am Dwij Rakesh Motwani, a UI/UX designer, web designer, product designer(learning) and gamer. This portfolio showcases my work and skills in various domains, including product design, live streaming, and technical expertise.
 
 Feel free to explore my work and learn more about me.
 
