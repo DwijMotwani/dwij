@@ -198,46 +198,4 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-//cursor
-document.addEventListener("DOMContentLoaded", () => {
-  const cursor = document.querySelector(".cursor");
-  const rippleContainer = document.getElementById("ripple-container");
-
-  // Track mouse movement
-  document.addEventListener("mousemove", (e) => {
-    const { clientX: x, clientY: y } = e;
-
-    // Update cursor position
-    cursor.style.left = `${x}px`;
-    cursor.style.top = `${y}px`;
-
-    // Create ripple effect
-    createRipple(x, y);
-  });
-
-  function createRipple(x, y) {
-    const ripple = document.createElement("div");
-    ripple.classList.add("ripple");
-
-    // Random RGB color generation
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-
-    // Set the ripple's background color to a random RGB value
-    ripple.style.backgroundColor = `rgba(${r}, ${g}, ${b}, 0.6)`;
-
-    // Position ripple at the mouse cursor
-    ripple.style.left = `${x}px`;
-    ripple.style.top = `${y}px`;
-
-    // Append to ripple container and remove after animation
-    rippleContainer.appendChild(ripple);
-
-    // Remove ripple after animation ends
-    ripple.addEventListener("animationend", () => {
-      ripple.remove();
-    });
-  }
-});
 
