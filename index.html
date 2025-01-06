@@ -7,10 +7,14 @@
   <title>Portfolio Landing Page</title>
   <link rel="stylesheet" href="styles.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+
 </head>
 
 <body>
+
+  <!-- Custom Cursor -->
+  <div id="ripple-container"></div>
+  <div class="cursor"></div>
 
   <header class="l-header">
     <nav class="nav bd-grid">
@@ -45,7 +49,7 @@
           <a href="#about" class="home-scroll-link"><i class='bx bx-up-arrow-alt'></i>SCROLL DOWN</a>
         </div>
 
-        <img src="./images/dwij2.png" alt="Dwij Motwani" class="home-img">
+        <img src="/images/dwij2.png" alt="Dwij Motwani" class="home-img">
       </div>
     </section>
 
@@ -54,7 +58,7 @@
       <h2 class="section-title">About</h2>
       <div class="about-container bd-grid">
         <!-- <div class="about-img">
-                    <img src="./images/dwij.png" alt="Dwij Motwani image">
+                    <img src="/images/dwij.png" alt="Dwij Motwani image">
                 </div> -->
         <div>
           <h2 class="about-subtitle">I'm Dwij Motwani</h2>
@@ -116,7 +120,7 @@
 
 
         <div class="skills-img">
-          <img src="./images/bg.jpg" alt="skills image">
+          <img src="/images/bg.jpg" alt="skills image">
         </div>
       </div>
     </section>
@@ -125,38 +129,87 @@
 
     <!-- Portfolio Sections -->
     <section class="portfolio-section active portfolio">
-          <!-- Navigation Menu -->
-    <section id="portfolio">
-      <h2 class="section-title">Portfolio</h2>
-      <nav class="portfolio-nav">
-        <ul>
-          <li><a href="#all" class="active" onclick="filterPortfolio('all')">All</a></li>
-          <li><a href="#uiux" onclick="filterPortfolio('uiux')">UI/UX Design</a></li>
-          <li><a href="#web" onclick="filterPortfolio('web')">Web Design</a></li>
-          <li><a href="#product" onclick="filterPortfolio('product')">Product Design</a></li>
-          <li><a href="#sketching" onclick="filterPortfolio('sketching')">Sketching</a></li>
-          <li><a href="#gaming" onclick="filterPortfolio('gaming')">Gaming</a></li>
-        </ul>
-      </nav>
-    </section>
+      <!-- Navigation Menu -->
+      <section id="portfolio">
+        <h2 class="section-title">Portfolio</h2>
+        <nav class="portfolio-nav">
+          <ul>
+            <li><a href="#all" class="active" onclick="filterPortfolio('all')">All</a></li>
+            <li><a href="#uiux" onclick="filterPortfolio('uiux')">UI/UX Design</a></li>
+            <li><a href="#web" onclick="filterPortfolio('web')">Web Design</a></li>
+            <li><a href="#product" onclick="filterPortfolio('product')">Product Design</a></li>
+            <li><a href="#sketching" onclick="filterPortfolio('sketching')">Sketching</a></li>
+            <li><a href="#gaming" onclick="filterPortfolio('gaming')">Gaming</a></li>
+          </ul>
+        </nav>
+      </section>
       <!-- UI/UX Design Section -->
       <div class="portfolio-item uiux">
         <h3>UI/UX Design Project</h3>
-        <p>My UI/UX project. I have completed this Project for ottaBOX Tecchnologies as a Freelancer. Tools: Figma, Photoshop.</p>
+        <p>My UI/UX project. I have completed this Project for ottaBOX Tecchnologies as a Freelancer. Tools: Figma,
+          Photoshop.</p>
         <div class="image-container">
           <div class="image-box">
-            <img src="./images/uiux1.png" alt="Work Image" onclick="openModal('./images/uiux1.png')">
+            <img src="/images/uiux1.png" alt="Work Image" onclick="openModal('/images/uiux1.png')">
             <div class="text-button-container">
               <p>Frisky Foam App User Screens</p>
-              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-5735&starting-point-node-id=2254%3A5735&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1" class="image-button" target="_blank">View Figma</a>
+              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-5735&starting-point-node-id=2254%3A5735&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1"
+                class="image-button" target="_blank">View Figma</a>
             </div>
           </div>
 
           <div class="image-box">
-            <img src="./images/uiux2.png" alt="Output Image" onclick="openModal('./images/uiux2.png')">
+            <img src="/images/uiux2.png" alt="Output Image" onclick="openModal('/images/uiux2.png')">
             <div class="text-button-container">
               <p>Frisky Foam App Cleaner Screens</p>
-              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-8546&starting-point-node-id=2254%3A8546&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1" class="image-button" target="_blank">View Figma</a>
+              <a href="https://www.figma.com/proto/ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-8546&starting-point-node-id=2254%3A8546&scaling=min-zoom&show-proto-sidebar=1&t=rajz34nvLq8rjV8V-1"
+                class="image-button" target="_blank">View Figma</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Design Section -->
+      <div class="portfolio-item product">
+        <h3>Product Design Project</h3>
+        <p>Product design project done by Myself for Learning Product Design. Tools: Photoshop.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="/images/Kurkure.png" alt="Work Image" onclick="openModal('/images/Kurkure.png')">
+            <div class="text-button-container">
+              <p>Kurkure Design Image</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Kurkure.png')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="/images/Bag_of_Kurkure.jpg" alt="Output Image" onclick="openModal('/images/Bag_of_Kurkure.jpg')">
+            <div class="text-button-container">
+              <p>Kurkure Package Output Image</p>
+              <a href="javascript:void(0);" class="image-button"
+                onclick="openModal('/images/Bag_of_Kurkure.jpg')">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphics Design Section -->
+      <div class="portfolio-item product">
+        <h3>Graphics Design Project</h3>
+        <p>Graphics design project done by Myself for Learning Graphics Design. Tools: Photoshop.</p>
+        <div class="image-container">
+          <div class="image-box">
+            <img src="/images/CaféCulturePoster.jpg" alt="Work Image" onclick="openModal('/images/CaféCulturePoster.jpg')">
+            <div class="text-button-container">
+              <p>CaféCulture Poster</p>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/CaféCulturePoster.jpg')">View</a>
+            </div>
+          </div>
+          <div class="image-box">
+            <img src="/images/CaféCultureInstagram.jpg" alt="Output Image" onclick="openModal('/images/CaféCultureInstagram.jpg')">
+            <div class="text-button-container">
+              <p>CaféCulture Instagram Post</p>
+              <a href="javascript:void(0);" class="image-button"
+                onclick="openModal('/images/CaféCultureInstagram.jpg')">View</a>
             </div>
           </div>
         </div>
@@ -165,65 +218,44 @@
       <!-- Web Design Section -->
       <div class="portfolio-item web">
         <h3>Web Design Project</h3>
-        <p>My web design projects. I have completed this Projects for ottaBOX Tecchnologies as an Intern. Tools: HTML, CSS, JavaScript, Codeigniter, Visual Studio, Bootstrap, Xampp.</p>
+        <p>My web design projects. I have completed this Projects for ottaBOX Tecchnologies as an Intern. Tools: HTML,
+          CSS, JavaScript, Codeigniter, Visual Studio, Bootstrap, Xampp.</p>
         <div class="image-container">
           <div class="image-box">
-            <img src="./images/Web1.png" alt="Work Image" onclick="openModal('./images/Web1.png')">
+            <img src="/images/Web1.png" alt="Work Image" onclick="openModal('/images/Web1.png')">
             <div class="text-button-container">
               <p>Akshar Agro Website</p>
               <a href="https://aksharagroagency.net/" class="image-button" target="_blank">View Website</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/web2.png" alt="Output Image" onclick="openModal('./images/web2.png')">
+            <img src="/images/web2.png" alt="Output Image" onclick="openModal('/images/web2.png')">
             <div class="text-button-container">
               <p>Tata Nexon (Webpage Discontinued)</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/web2.png')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/web2.png')">View</a>
             </div>
           </div>
         </div><br>
         <div class="image-container">
           <div class="image-box">
-            <img src="./images/web3.png" alt="Work Image" onclick="openModal('./images/web3.png')">
+            <img src="/images/Web3.png" alt="Work Image" onclick="openModal('/images/Web3.png')">
             <div class="text-button-container">
               <p>Tata Safari (Webpage Discontinued)</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/web3.png')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Web3.png')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/Web4.png" alt="Output Image" onclick="openModal('./images/Web4.png')">
+            <img src="/images/Web4.png" alt="Output Image" onclick="openModal('/images/Web4.png')">
             <div class="text-button-container">
               <p>Tata Harrier (Webpage Discontinued)</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Web4.png')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Web4.png')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/web5.png" alt="Output Image" onclick="openModal('./images/web5-2.png')">
+            <img src="/images/web5.png" alt="Output Image" onclick="openModal('/images/web5-2.png')">
             <div class="text-button-container">
               <p>Fashion Website (College Project)</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/web5-2.png')">View</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Product Design Section -->
-      <div class="portfolio-item product">
-        <h3>Product Design Project (Self Learning)</h3>
-        <p>Product design project done by Myself for Learning Product Design. Tools: Photoshop.</p>
-        <div class="image-container">
-          <div class="image-box">
-            <img src="./images/Kurkure.png" alt="Work Image" onclick="openModal('./images/Kurkure.png')">
-            <div class="text-button-container">
-              <p>Kurkure Design Image</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Kurkure.png')">View</a>
-            </div>
-          </div>
-          <div class="image-box">
-            <img src="./images/Bag_of_Kurkure.jpg" alt="Output Image" onclick="openModal('./images/Bag_of_Kurkure.jpg')">
-            <div class="text-button-container">
-              <p>Kurkure Package Output Image</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Bag_of_Kurkure.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/web5-2.png')">View</a>
             </div>
           </div>
         </div>
@@ -234,38 +266,38 @@
         <p>I love doing Drawing and Sketching.</p>
         <div class="image-container">
           <div class="image-box">
-            <img src="./images/sketch1.jpg" alt="Sketch Image" onclick="openModal('./images/sketch1.jpg')">
+            <img src="/images/sketch1.jpg" alt="Sketch Image" onclick="openModal('/images/sketch1.jpg')">
             <div class="text-button-container">
               <p>RadheKrishna</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/sketch1.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/sketch1.jpg')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/sketch2.jpg" alt="Sketch Image" onclick="openModal('./images/sketch2.jpg')">
+            <img src="/images/sketch2.jpg" alt="Sketch Image" onclick="openModal('/images/sketch2.jpg')">
             <div class="text-button-container">
               <p>ShivParvati</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Sketch2.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Sketch2.jpg')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/sketch3.jpg" alt="Sketch Image" onclick="openModal('./images/sketch3.jpg')">
+            <img src="/images/sketch3.jpg" alt="Sketch Image" onclick="openModal('/images/sketch3.jpg')">
             <div class="text-button-container">
               <p>Mercedese E-Class</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Sketch3.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Sketch3.jpg')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/sketch4.jpg" alt="Sketch Image" onclick="openModal('./images/sketch4.jpg')">
+            <img src="/images/sketch4.jpg" alt="Sketch Image" onclick="openModal('/images/sketch4.jpg')">
             <div class="text-button-container">
               <p>Car</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Sketch4.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Sketch4.jpg')">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/sketch5.jpg" alt="Sketch Image" onclick="openModal('./images/sketch5.jpg')">
+            <img src="/images/sketch5.jpg" alt="Sketch Image" onclick="openModal('/images/sketch5.jpg')">
             <div class="text-button-container">
               <p>SaiRam</p>
-              <a href="javascript:void(0);" class="image-button" onclick="openModal('./images/Sketch5.jpg')">View</a>
+              <a href="javascript:void(0);" class="image-button" onclick="openModal('/images/Sketch5.jpg')">View</a>
             </div>
           </div>
         </div>
@@ -276,14 +308,14 @@
         <p>Brief description of your gaming project or design related to gaming (e.g., thumbnails).</p>
         <div class="image-container">
           <div class="image-box">
-            <img src="./images/game-work.jpg" alt="Gaming Image" onclick="openModal('./images/game-work.jpg')">
+            <img src="/images/game-work.jpg" alt="Gaming Image" onclick="openModal('/images/game-work.jpg')">
             <div class="text-button-container">
               <p>Output Image</p>
               <a href="https://example.com/work-image" class="image-button" target="_blank">View</a>
             </div>
           </div>
           <div class="image-box">
-            <img src="./images/game-output.jpg" alt="Gaming Output Image" onclick="openModal('./images/game-output.jpg')">
+            <img src="/images/game-output.jpg" alt="Gaming Output Image" onclick="openModal('/images/game-output.jpg')">
             <div class="text-button-container">
               <p>Output Image</p>
               <a href="https://example.com/work-image" class="image-button" target="_blank">View</a>
@@ -291,7 +323,7 @@
           </div>
         </div>
       </div> -->
-      
+
     </section>
 
     <!-- Lightbox Modal -->
@@ -314,7 +346,7 @@
           <h3 class="contact-subtitle">ADDRESS</h3>
           <span class="contact-text">Navsari, Gujarat, india</span>
         </div>
-<!-- 
+        <!-- 
         <form action="" class="contact-form">
           <div class="contact-inputs">
             <input type="text" placeholder="Name" class="contact-input">
