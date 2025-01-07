@@ -65,40 +65,6 @@ body {
   transition: transform 0.1s ease;
 }
 
-/* Ripple Container */
-#ripple-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
-  z-index: 9998; /* Below the cursor */
-}
-
-/* Ripple Effect */
-.ripple {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  background-color: rgba(128, 0, 255, 0); /* Default color */
-  border-radius: 50%;
-  pointer-events: none;
-  animation: ripple-animation 1s ease-out forwards;
-}
-
-/* Ripple Animation */
-@keyframes ripple-animation {
-  from {
-    transform: scale(0);
-    opacity: 1;
-  }
-  to {
-    transform: scale(5);
-    opacity: 0;
-  }
-}
-
 h1,
 h2,
 p {
