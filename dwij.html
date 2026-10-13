@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dwij Motwani | UI/UX & Graphic Designer</title>
+<meta name="description" content="Dwij Motwani - UI/UX & Graphic Designer. Figma prototypes, brand graphics and live websites.">
+<meta property="og:title" content="Dwij Motwani | UI/UX & Graphic Designer"><meta property="og:description" content="Figma prototypes, brand graphics and live websites."><meta property="og:image" content="https://dwijmotwani.github.io/dwij/images/uiux1.png"><meta name="theme-color" content="#0f0f11">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>D</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0f0f11;--card:#18181b;--line:rgba(255,255,255,.1);--txt:#f4f4f5;--mut:#a1a1aa;--acc:#eab308}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{background:var(--bg);color:var(--txt);font:16px/1.6 Inter,system-ui,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Space Grotesk',Inter,sans-serif;line-height:1.1}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+nav{position:sticky;top:0;z-index:20;background:rgba(15,15,17,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .l{display:flex;gap:22px;align-items:center;font-size:14px;color:var(--mut)}
+
+.logo{font:700 20px 'Space Grotesk',Inter,system-ui,sans-serif;color:#fff}.logo i{color:var(--acc);font-style:normal}
+.btn{display:inline-block;padding:10px 20px;border-radius:99px;background:#fff;color:#0f0f11;font-weight:600;font-size:14px;border:1px solid #fff;cursor:pointer;transition:.2s}
+.btn.o{background:none;color:#fff;border-color:var(--line)}
+
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center;padding-top:56px;padding-bottom:40px}
+.hero h1{font-size:clamp(34px,5.2vw,62px);letter-spacing:-.02em}
+.hero p{color:var(--mut);max-width:560px;margin:18px 0 24px;font-size:18px}
+.av{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--mut);border:1px solid var(--line);border-radius:99px;padding:5px 14px;margin-bottom:18px}
+.av:before{content:"";width:8px;height:8px;border-radius:50%;background:#22c55e}
+.r{display:flex;gap:12px;flex-wrap:wrap}
+.pt{position:relative;aspect-ratio:4/5;width:100%;max-width:340px;justify-self:end;border-radius:28px;overflow:hidden;background:linear-gradient(135deg,#27272a,#18181b);display:grid;place-items:center;border:1px solid var(--line)}
+.pt span{font:700 64px 'Space Grotesk',Inter,system-ui,sans-serif;color:#3f3f46}
+.pt img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;padding-bottom:48px}
+.sv button{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;color:inherit;cursor:pointer;transition:.2s}
+
+.sv b{display:block;font:700 18px 'Space Grotesk',Inter,system-ui,sans-serif}.sv small{display:block;color:var(--mut);font-size:13px;margin:4px 0 10px;line-height:1.45}.sv em{margin-top:auto;font-style:normal;color:var(--acc);font-size:13px}
+.hd{padding:40px 0 14px;border-top:1px solid var(--line)}
+.hd h2{font-size:32px}.hd p{color:var(--mut);font-size:15px;margin-top:6px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:12px 0;scrollbar-width:none;position:sticky;top:60px;z-index:10;background:var(--bg)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:9px 18px;border-radius:99px;border:1px solid var(--line);background:none;color:var(--mut);font:500 14px Inter,system-ui,sans-serif;cursor:pointer;transition:.2s}
+.tab b{font-weight:500;opacity:.6;margin-left:6px}.tab.on{background:var(--acc);border-color:var(--acc);color:#0f0f11}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px;padding:10px 0 24px}
+.card{background:none;border:0;color:inherit;text-align:left;cursor:pointer;min-width:0}
+.im{position:relative;aspect-ratio:4/3;border-radius:14px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.im img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .5s}
+
+.im:after{content:"View project \2192";position:absolute;inset:auto 0 0 0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:13px;font-weight:600;opacity:0;transition:.25s}
+.card:focus-visible .im:after{opacity:1}
+.im.bad img{display:none}.im.bad:before{content:attr(data-t);position:absolute;inset:0;display:grid;place-items:center;padding:16px;text-align:center;color:var(--mut);font:600 18px 'Space Grotesk',Inter,system-ui,sans-serif}
+.bd,.mc{position:absolute;z-index:1;padding:3px 10px;border-radius:99px;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);border:1px solid var(--line);font-size:11px;font-weight:600;color:#fff}
+.bd{top:10px;left:10px}.mc{top:10px;right:10px}
+.card .k{color:var(--acc);font-size:11px;text-transform:uppercase;letter-spacing:.1em;margin-top:10px;display:block}
+.card h3{font-size:18px;margin-top:2px}.card .c{color:var(--mut);font-size:13px;display:block;margin-top:2px}
+.more{text-align:center;padding-bottom:48px}
+.sec{padding:56px 0;border-top:1px solid var(--line)}
+.sec h2{font-size:30px;margin-bottom:24px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.tl{border-left:1px solid var(--line);padding:0 0 26px 24px;position:relative}
+.tl:before{content:"";position:absolute;left:-5px;top:7px;width:9px;height:9px;border-radius:50%;background:var(--acc)}
+.tl h3{font-size:18px}.tl small{color:var(--acc);display:block;margin:2px 0 6px}.tl p{color:var(--mut);font-size:15px}
+.sk h3{font-size:13px;text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chips span{padding:6px 14px;border:1px solid var(--line);border-radius:99px;font-size:13px;color:var(--mut)}
+footer{border-top:1px solid var(--line);padding:56px 0 28px;background:#0b0b0d}
+footer h2{font-size:clamp(30px,5vw,48px);margin-bottom:20px}
+footer .r{margin-bottom:40px}
+.ft{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--mut);font-size:14px}
+/* project modal */
+.ov{position:fixed;inset:0;z-index:50;background:rgba(5,5,7,.82);backdrop-filter:blur(6px);display:none;align-items:center;justify-content:center;padding:24px}
+.ov.on{display:flex}
+.md{position:relative;width:100%;max-width:1100px;height:min(760px,100%);background:var(--card);border:1px solid var(--line);border-radius:20px;display:grid;grid-template-columns:1.45fr 1fr;overflow:hidden}
+.gal{display:flex;flex-direction:column;min-width:0;min-height:0;background:#0c0c0e}
+.stage{flex:1;position:relative;min-height:0;display:flex;align-items:center;justify-content:center;padding:16px;touch-action:pan-y}
+.stage img{max-width:100%;max-height:100%;object-fit:contain;border-radius:8px;user-select:none;-webkit-user-drag:none}
+.nb{position:absolute;top:50%;transform:translateY(-50%);z-index:2}.nb.p{left:10px}.nb.n{right:10px}
+.cnt{position:absolute;top:auto;right:auto;left:14px;bottom:12px;z-index:2}
+.th{display:flex;gap:8px;padding:6px 16px 14px;overflow-x:auto;flex:none;scrollbar-width:thin}
+.th button{flex:none;width:68px;height:52px;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;background:var(--card);cursor:pointer;opacity:.5;transition:.2s}
+.th button.on{border-color:var(--acc);opacity:1}.th img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.side{display:flex;flex-direction:column;min-height:0;min-width:0;border-left:1px solid var(--line)}
+.body{flex:1;overflow-y:auto;padding:28px 28px 16px}
+.body .k{color:var(--acc);font-size:12px;text-transform:uppercase;letter-spacing:.1em;display:block;padding-right:48px}
+.body h3{font-size:30px;margin:6px 0 16px;padding-right:48px}
+.body dl{display:grid;grid-template-columns:78px 1fr;gap:8px 12px;font-size:14px;margin-bottom:16px}
+.body dt{color:var(--mut)}.body dd{margin:0}
+.body p{color:var(--mut);margin-bottom:18px}
+.pn{flex:none;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:8px;align-items:center;padding:12px 16px;border-top:1px solid var(--line);background:var(--card)}
+.pb{display:flex;align-items:center;gap:8px;min-width:0;background:none;border:0;color:var(--txt);font-size:13px;cursor:pointer;padding:6px;border-radius:10px}
+.pb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pb.nx{justify-content:flex-end;text-align:right}.pn small{color:var(--mut);font-size:12px}
+.ib{background:rgba(255,255,255,.12);border:0;color:#fff;width:40px;height:40px;border-radius:50%;font-size:18px;cursor:pointer;display:grid;place-items:center;flex:none;transition:.2s}
+
+.cl{position:absolute;top:12px;right:12px;z-index:5;background:rgba(0,0,0,.6)}
+@media(hover:hover){.btn:hover{background:var(--acc);color:#0f0f11;border-color:var(--acc)}.sv button:hover{border-color:var(--acc);transform:translateY(-2px)}.tab:hover{color:#fff}.card:hover img{transform:scale(1.04)}.pb:hover{background:rgba(255,255,255,.07)}.ib:hover{background:var(--acc);color:#000}nav .l a:not(.btn):hover{color:#fff}.card:hover .im:after{opacity:1}}
+@media(max-width:860px){
+  .hero{grid-template-columns:1fr;gap:28px;padding-top:36px}.pt{justify-self:start;max-width:112px;aspect-ratio:1;border-radius:50%;order:-1}.hero>div:first-child{order:1}.pt span{font-size:32px}.hero{gap:20px}
+  .two{grid-template-columns:1fr;gap:32px}
+  nav .l a.h{display:none}nav .l{gap:10px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+  .ov{padding:0;align-items:flex-end}
+  .md{height:94%;max-width:none;border-radius:20px 20px 0 0;grid-template-columns:1fr;grid-template-rows:minmax(0,52%) minmax(0,1fr)}.th{padding:4px 12px 10px}.th button{width:52px;height:40px}.stage{padding:10px}
+  .side{border-left:0;border-top:1px solid var(--line)}.body{padding:18px 20px 10px}.body h3{font-size:24px}
+  .cl{background:rgba(0,0,0,.7)}
+}
+@media(max-width:560px){.sv{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.sv small{display:none}.sv button{padding:14px 16px}.sv b{margin-bottom:8px}}
+@media(max-width:420px){.w{padding-left:16px;padding-right:16px}.hero .r .btn{flex:1 1 calc(50% - 6px);text-align:center}.hero .r .btn:first-child{flex-basis:100%}.btn{padding:9px 16px}.hero p{font-size:16px}.pb span{display:none}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="w">
+  <a class="logo" href="#top">Dwij<i>.</i></a>
+  <div class="l">
+    <a class="h" href="#work">Work</a><a class="h" href="#about">About</a>
+    <a class="btn o" href="resume.pdf" target="_blank" rel="noopener">Resume</a>
+    <a class="btn" href="#contact">Contact</a>
+  </div>
+</div></nav>
+
+<header class="hero w" id="top">
+  <div>
+    <div class="av">Open to full-time UI/UX roles · Navsari, India</div>
+    <h1>UI/UX designer who also designs graphics & ships websites.</h1>
+    <p>Computer Engineering background, so my interfaces are built to be developed. Primary focus: UI/UX and product. Also: brand graphics, web and sketching.</p>
+    <div class="r"><a class="btn" href="resume.pdf" target="_blank" rel="noopener">Download resume</a><a class="btn o" href="mailto:dwijmotwani@gmail.com">Email me</a><a class="btn o" href="https://linkedin.com/in/dwijmotwani" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+  <div class="pt"><span>DM</span><img src="https://dwijmotwani.github.io/dwij/images/dwij2.png" alt="Dwij Motwani" onerror="this.remove()"></div>
+</header>
+
+<div class="w sv" id="sv" aria-label="Skills"></div>
+
+<main class="w" id="work">
+  <div class="hd"><h2>Selected work</h2><p>Pick a skill, then tap any project to open it.</p></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Work categories"></div>
+  <div class="grid" id="grid"></div>
+  <div class="more"><button class="btn o" id="more" style="display:none"></button></div>
+</main>
+
+<section class="sec" id="about"><div class="w two">
+  <div>
+    <h2>Experience</h2>
+    <div class="tl"><h3>UI/UX Designer</h3><small>ClienZon · 2026</small><p>Responsive interfaces, Figma component libraries and design-to-engineering handoff.</p></div>
+    <div class="tl"><h3>Freelance Designer</h3><small>2025 – Present</small><p>RidePing app, Frisky Foam app, brand work for Sanwariya and The Virgin Leaf, residential planning.</p></div>
+    <div class="tl"><h3>B.E. Computer Engineering</h3><small>2020 – 2023</small><p>Frontend, databases and systems thinking that shapes how I design.</p></div>
+  </div>
+  <div class="sk">
+    <h2>Skills</h2>
+    <h3>Design</h3><div class="chips"><span>Figma</span><span>Prototyping</span><span>Design systems</span><span>Illustrator</span><span>Photoshop</span><span>Sketching</span></div>
+    <h3>Development</h3><div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>CodeIgniter</span><span>Bootstrap</span></div>
+    <a class="btn o" href="resume.pdf" target="_blank" rel="noopener">Download resume (PDF)</a>
+  </div>
+</div></section>
+
+<footer id="contact"><div class="w">
+  <h2>Let's build something great.</h2>
+  <div class="r">
+    <a class="btn" href="mailto:dwijmotwani@gmail.com">dwijmotwani@gmail.com</a>
+    <a class="btn o" href="https://linkedin.com/in/dwijmotwani" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn o" href="https://github.com/DwijMotwani" target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="ft"><span>© 2026 Dwij Motwani · Navsari, Gujarat</span><a href="#top">Back to top ↑</a></div>
+</div></footer>
+
+<div class="ov" id="ov">
+  <div class="md" role="dialog" aria-modal="true" aria-labelledby="dt">
+    <button class="ib cl" id="dx" aria-label="Close project">&times;</button>
+    <div class="gal">
+      <div class="stage" id="stage"><button class="ib nb p" id="ip" aria-label="Previous image">&larr;</button><img id="gi" alt=""><button class="ib nb n" id="in" aria-label="Next image">&rarr;</button><span class="mc cnt" id="cn"></span></div>
+      <div class="th" id="th"></div>
+    </div>
+    <div class="side">
+      <div class="body" id="bd"><span class="k" id="dk"></span><h3 id="dt"></h3><dl id="dm"></dl><p id="dd"></p><div class="r" id="dl"></div></div>
+      <div class="pn"><button class="pb" id="pp" aria-label="Previous project">&larr; <span id="ppt"></span></button><small id="pc"></small><button class="pb nx" id="pn" aria-label="Next project"><span id="pnt"></span> &rarr;</button></div>
+    </div>
+  </div>
+</div>
+<noscript><p style="padding:24px;color:#a1a1aa">Please enable JavaScript to view the project gallery.</p></noscript>
+
+<script>
+const B='https://dwijmotwani.github.io/dwij/images/',F='https://www.figma.com/proto/';
+/* ONE ENTRY = ONE PROJECT. Fill optional fields to show them: role, impact, d (description).
+   k = tab, f:1 = show in Featured, badge = honest label, imgs = gallery (first image is the cover). */
+const P=[
+{k:'UI/UX',f:1,t:'RidePing',badge:'Freelance',ctx:'School transport tracking app',tools:'Figma',d:'Real-time location tracking, attendance monitoring and parent-driver communication.',role:'',impact:'',imgs:['78258_6091b6.png','78259_6091b6.png','78260_6091b6.png']},
+{k:'UI/UX',f:1,t:'Frisky Foam',badge:'Freelance',ctx:'Car wash app · ottaBOX Technologies',tools:'Figma, Photoshop',d:'Separate user and cleaner experiences in one app.',imgs:[B+'uiux1.png',B+'uiux2.png'],links:[['User flow prototype',F+'ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-5735&starting-point-node-id=2254%3A5735&scaling=min-zoom'],['Cleaner flow prototype',F+'ViQoiMZBWlZwS9J4INYU6I/Car-Wash-Design-2?page-id=0%3A1&node-id=2254-8546&starting-point-node-id=2254%3A8546&scaling=min-zoom']]},
+{k:'UI/UX',f:1,t:'Cake Shop',badge:'Concept',ctx:'Ordering app',tools:'Figma',imgs:[B+'cakeshop2.png'],links:[['Figma prototype',F+'tAtU9XP5xhECrO7vgIP40X/Cake-Shop?page-id=0%3A1&node-id=1-2&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2']]},
+{k:'UI/UX',t:'Juice Cans',badge:'Concept',ctx:'Product app',tools:'Figma',imgs:[B+'juice.png'],links:[['Figma prototype',F+'Qjmu2CLNrHucnR2kqX2CPF/juice?page-id=0%3A1&node-id=2-2&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2%3A2']]},
+{k:'Web',f:1,t:'Akshar Agro',badge:'Live site',ctx:'Agency website · ottaBOX Technologies',tools:'HTML, CSS, JavaScript, CodeIgniter, Bootstrap',imgs:[B+'Web1.png'],links:[['Visit live site','https://aksharagroagency.net/']]},
+{k:'Web',t:'Tata Motors model pages',badge:'Intern',ctx:'Nexon, Safari, Harrier · ottaBOX (pages since discontinued)',tools:'HTML, CSS, JavaScript, Bootstrap',imgs:[B+'web2.png',B+'web3.png',B+'web4.png']},
+{k:'Web',t:'Fashion website',badge:'College',ctx:'Academic project',tools:'HTML, CSS, JavaScript',imgs:[B+'web5.png']},
+{k:'Graphics',f:1,t:'Luxorides',badge:'Practice',ctx:'Instagram poster and website banner',tools:'Photoshop',imgs:[B+'luxoridestask1.png',B+'luxoridestask2.png']},
+{k:'Graphics',f:1,t:'Kurkure redesign',badge:'Concept',ctx:'Packaging redesign of an existing product',tools:'Photoshop',imgs:[B+'Kurkure.png',B+'Bag_of_Kurkure.jpg']},
+{k:'Graphics',t:'Café Culture',badge:'Practice',ctx:'Poster and Instagram post',tools:'Photoshop',imgs:[B+'Caf%C3%A9CulturePoster.jpg',B+'Caf%C3%A9CultureInstagram.jpg']},
+{k:'Graphics',t:'NG Tours & Travels',badge:'Practice',ctx:'Poster',tools:'Photoshop',imgs:[B+'ng.jpg']},
+{k:'Graphics',t:'LinkedIn membership',badge:'Practice',ctx:'Poster',tools:'Photoshop',imgs:[B+'linkedin.jpg']},
+{k:'Sketches',t:'Pencil sketches',badge:'Personal',ctx:'Radhe Krishna, Shiv Parvati, Mercedes E-Class, Sai Ram',tools:'Pencil',imgs:[1,2,3,4,5].map(n=>B+'sketch'+n+'.jpg')}
+// {k:'3D',t:'Navsari G+1 Residence',badge:'Freelance',ctx:'Residential planning',tools:'Sweet Home 3D',imgs:['render1.jpg']},
+];
+const $=id=>document.getElementById(id),slug=k=>k.toLowerCase().replace(/\W+/g,''),N=6;
+const SV={'UI/UX':'Apps and product interfaces with clickable Figma prototypes.',Graphics:'Posters, social posts and packaging.',Web:'Responsive websites, designed and coded.',Sketches:'Pencil art, for the love of drawing.'};
+const ORD=['UI/UX','Graphics','Web','Sketches','3D'],ks=[...new Set(P.map(p=>p.k))].sort((a,b)=>(ORD.indexOf(a)+1||99)-(ORD.indexOf(b)+1||99));
+const keys=['Featured',...ks];
+let cur=keys.find(k=>slug(k)===location.hash.slice(1))||keys[0],all=false,list=[],cp=null,ci=0,last=null;
+const cnt=k=>P.filter(p=>p.k===k).length;
+$('sv').innerHTML=keys.slice(1).map(k=>`<button data-k="${k}"><b>${k}</b><small>${SV[k]||''}</small><em>${cnt(k)} project${cnt(k)>1?'s':''} →</em></button>`).join('');
+function tabs(){$('tabs').innerHTML=keys.map(k=>{const n=k==='Featured'?0:cnt(k);return`<button class="tab${k===cur?' on':''}" role="tab" aria-selected="${k===cur}" data-k="${k}">${k}${n>1?`<b>${n}</b>`:''}</button>`}).join('')}
+function draw(){
+  list=cur==='Featured'?P.filter(p=>p.f):P.filter(p=>p.k===cur);
+  const sh=all?list:list.slice(0,N);
+  $('grid').innerHTML=sh.map((p,i)=>`<button class="card" data-i="${i}"><div class="im" data-t="${p.t}"><span class="bd">${p.badge}</span>${p.imgs.length>1?`<span class="mc">${p.imgs.length} images</span>`:''}<img loading="lazy" src="${p.imgs[0]}" alt="${p.t}" onerror="this.parentNode.classList.add('bad')"></div><span class="k">${p.k}</span><h3>${p.t}</h3><span class="c">${p.ctx}</span></button>`).join('');
+  const m=$('more');m.style.display=list.length>N?'inline-block':'none';m.textContent=all?'Show fewer':'Show all '+list.length;
+}
+function go(k,scroll){cur=k;all=false;tabs();draw();history.replaceState(null,'','#'+slug(k));if(scroll)$('work').scrollIntoView()}
+$('tabs').onclick=e=>{const b=e.target.closest('.tab');if(b)go(b.dataset.k)};
+$('sv').onclick=e=>{const b=e.target.closest('button');if(b)go(b.dataset.k,1)};
+$('more').onclick=()=>{all=!all;draw()};
+$('grid').onclick=e=>{const c=e.target.closest('.card');if(c){last=c;show(list[+c.dataset.i])}};
+function show(p,n=0){cp=p;const L=p.imgs.length;ci=(n+L)%L;
+  $('gi').src=p.imgs[ci];$('gi').alt=p.t+' – image '+(ci+1);
+  $('th').innerHTML=L>1?p.imgs.map((s,j)=>`<button class="${j===ci?'on':''}" data-j="${j}" aria-label="Image ${j+1}"><img src="${s}" alt=""></button>`).join(''):'';
+  $('th').style.display=L>1?'flex':'none';
+  [$('ip'),$('in'),$('cn')].forEach(b=>b.style.display=L>1?'':'none');
+  $('cn').textContent=(ci+1)+' / '+L;
+  const t=$('th').children[ci];if(t&&t.scrollIntoView)t.scrollIntoView({block:'nearest',inline:'center'});
+  $('dk').textContent=p.k+' · '+p.badge;$('dt').textContent=p.t;
+  $('dm').innerHTML=[['Context',p.ctx],['Role',p.role],['Tools',p.tools],['Impact',p.impact]].filter(r=>r[1]).map(r=>`<dt>${r[0]}</dt><dd>${r[1]}</dd>`).join('');
+  $('dd').textContent=p.d||'';$('dd').style.display=p.d?'block':'none';
+  $('dl').innerHTML=(p.links||[]).map(l=>`<a class="btn" href="${l[1]}" target="_blank" rel="noopener">${l[0]}</a>`).join('');
+  const i=list.indexOf(p),M=list.length,pv=list[(i-1+M)%M],nx=list[(i+1)%M];
+  $('ppt').textContent=pv.t;$('pnt').textContent=nx.t;$('pc').textContent=(i+1)+' of '+M;
+  $('pp').disabled=$('pn').disabled=M<2;$('pp').style.visibility=$('pn').style.visibility=M<2?'hidden':'';
+  if(!$('ov').classList.contains('on')){$('ov').classList.add('on');document.body.style.overflow='hidden';$('dx').focus({preventScroll:true})}
+  $('bd').scrollTop=0}
+function hide(){$('ov').classList.remove('on');document.body.style.overflow='';if(last)last.focus({preventScroll:true})}
+function step(d){const M=list.length;show(list[(list.indexOf(cp)+d+M)%M])}
+$('dx').onclick=hide;
+$('ov').onclick=e=>{if(e.target===$('ov'))hide()};
+$('ip').onclick=()=>show(cp,ci-1);$('in').onclick=()=>show(cp,ci+1);
+$('pp').onclick=()=>step(-1);$('pn').onclick=()=>step(1);
+$('th').onclick=e=>{const b=e.target.closest('button');if(b)show(cp,+b.dataset.j)};
+let sx=null;
+$('stage').addEventListener('touchstart',e=>{sx=e.touches[0].clientX},{passive:true});
+$('stage').addEventListener('touchend',e=>{if(sx===null)return;const d=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(d)>50&&cp.imgs.length>1)show(cp,ci+(d<0?1:-1))});
+document.addEventListener('keydown',e=>{if(!$('ov').classList.contains('on'))return;
+  if(e.key==='Escape')hide();
+  if(e.key==='ArrowLeft')show(cp,ci-1);if(e.key==='ArrowRight')show(cp,ci+1)});
+tabs();draw();
+</script>
+</body>
+</html>
